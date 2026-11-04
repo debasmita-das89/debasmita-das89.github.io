@@ -1,10 +1,10 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact | Das IT Consulting</title>
+  <meta name="description" content="Get in touch with Das IT Consulting in Munich about CRM delivery, UAT stabilization or release planning support." />
   <link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
@@ -12,71 +12,56 @@
 <header class="header">
   <div class="container">
     <div class="nav">
-      <a class="brand" href="/index.html">Das IT Consulting</a>
-      <nav class="menu">
+      <a class="brand" href="/index.html"><span class="brand-mark" aria-hidden="true">d</span><span class="brand-name">Das IT Consulting</span></a>
+      <nav class="menu" aria-label="Main">
         <a href="/index.html" data-page="index.html">Home</a>
         <a href="/about.html" data-page="about.html">About</a>
         <a href="/services.html" data-page="services.html">Services</a>
-        <a href="/contact.html" data-page="contact.html">Contact</a>
-        <a href="/impressum.html">Impressum</a>
-        <a href="/privacy.html">Privacy</a>
+        <a class="menu-cta" href="/contact.html" data-page="contact.html">Contact</a>
       </nav>
     </div>
   </div>
 </header>
 
-<section class="section alt">
-  <div class="container">
-    <div class="kicker">Contact</div>
-    <h1>Let’s start a conversation</h1>
-    <p class="small">
-      Email: <a href="mailto:debasmita.das@das-it-consulting.de">debasmita.das@das-it-consulting.de</a><br/>
-      Location: Munich, Germany
-    </p>
-
-    <div class="split" style="margin-top:18px">
-      <div class="banner">
-        <h2>What to include</h2>
-        <p>
-          Share a short summary of your initiative, timeline, and the kind of support you need (delivery leadership, UAT stabilization, release planning, etc.).
-        </p>
-        <p class="small">
-          I typically respond within 1–2 business days.
-        </p>
+<main>
+<section class="section olive">
+  <div class="container split">
+    <div class="narrow">
+      <p class="kicker">Contact</p>
+      <h1 style="font-size:clamp(2.4rem,4.6vw,4rem)">Let’s start a conversation.</h1>
+      <p style="margin-top:24px;font-size:1.15rem">Share a short summary of your initiative, timeline and the kind of support you need (delivery leadership, UAT stabilization, release planning, etc.). I typically respond within 1–2 business days.</p>
+      <div class="contact-list">
+        <div><p class="label">Email</p><a class="value" href="mailto:debasmita.das@das-it-consulting.de">debasmita.das@das-it-consulting.de</a></div>
+        <div><p class="label">Location</p><p class="value">Munich, Germany</p></div>
       </div>
-
-      <form class="form" action="https://formspree.io/f/mlgewlnb" method="POST">
-        <input type="hidden" name="_subject" value="New inquiry from das-it-consulting.de">
-        <label for="name">Name</label>
-        <input id="name" name="name" required />
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <!-- Optional: helps reduce spam -->
-        <input type="text" name="_gotcha" style="display:none" />
-        <input type="hidden" name="_next" value="https://das-it-consulting.de/thank-you.html">
-
-        <button class="btn btn-primary" type="submit">Submit message</button>
-        <p class="small" style="margin-top:10px">
-          By submitting this form, you agree that your data is processed to respond to your request. See <a href="/privacy.html">Privacy Policy</a>.
-        </p>
-      </form>
     </div>
+
+    <form class="form" action="https://formspree.io/f/mlgewlnb" method="POST">
+      <input type="hidden" name="_subject" value="New inquiry from das-it-consulting.de">
+      <input type="hidden" name="_next" value="https://das-it-consulting.de/thank-you.html">
+      <div class="form-row">
+        <label class="field" for="name">Name
+          <input id="name" name="name" autocomplete="name" required />
+        </label>
+        <label class="field" for="email">Email
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </label>
+      </div>
+      <label class="field" for="message">Message
+        <textarea id="message" name="message" placeholder="Your initiative, timeline and the support you need" required></textarea>
+      </label>
+      <div class="hp" aria-hidden="true"><label for="_gotcha">Leave empty</label><input id="_gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></div>
+      <button class="btn btn-dark" type="submit">Send message</button>
+      <p class="small">By submitting this form, you agree that your data is processed to respond to your request. See the <a href="/privacy.html">Privacy Policy</a>.</p>
+    </form>
   </div>
 </section>
+</main>
 
 <footer class="footer">
-  <div class="container">
-    <div class="footer-row">
-      <div>© <span id="year"></span> Das IT Consulting</div>
-      <div>
-        <a href="/impressum.html">Impressum</a> • <a href="/privacy.html">Privacy Policy</a>
-      </div>
-    </div>
+  <div class="container footer-row">
+    <div>© <span id="year"></span> Das IT Consulting · Client / project references available on request</div>
+    <div class="footer-links"><a href="/impressum.html">Impressum</a><a href="/privacy.html">Privacy Policy</a></div>
   </div>
 </footer>
 
